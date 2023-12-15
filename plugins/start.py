@@ -54,7 +54,7 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("Wait Dude...")
+        temp_msg = await message.reply("Sek enteni sedilik...")
         try:
             messages = await get_messages(client, ids)
         except:
@@ -87,11 +87,11 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
     [
-        InlineKeyboardButton("𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋", url="https://t.me/Its_Tartaglia_Childe"),
+        InlineKeyboardButton("Cowo Ganteng", url="https://t.me/cahcilikx"),
     ],
     [
-                    InlineKeyboardButton("⚠️ Tentang Saya ⚠️", callback_data = "about"),
-                    InlineKeyboardButton("✌️ close ✌️", callback_data = "close")
+                    InlineKeyboardButton("Tentang Saya", callback_data = "about"),
+                    InlineKeyboardButton("close", callback_data = "close")
         
     ]
             ]
@@ -125,11 +125,11 @@ REPLY_ERROR = "<code>Use this command as a reply to any telegram message without
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="💞 Channel 💞", url=client.invitelink),
-            InlineKeyboardButton(text="💞 Grup Chat 💞", url=client.invitelink2),
+            InlineKeyboardButton(text="Channel", url=client.invitelink),
+            InlineKeyboardButton(text="Grup Chat", url=client.invitelink2),
         ],
         [
-            InlineKeyboardButton(text="💞 Channel 2 💞", url=client.invitelink3),
+            InlineKeyboardButton(text="Channel 2", url=client.invitelink3),
         ]
     ]
     try:
